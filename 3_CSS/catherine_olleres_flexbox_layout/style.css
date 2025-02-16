@@ -1,0 +1,33 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  
+  header {
+    background-color: #ffcc00;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  main {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  aside {
+    background-color: #9b59b6;
+    height: 300px;
+    width: 300px;
+  }
+  
+  section {
+    background-color: #1abc9c;
+    flex: 1;
+    height: 300px;
+    width: 876px;
+  }
+  
+  footer {
+    background-color: #e74c3c;
+    height: 100px;
+  }

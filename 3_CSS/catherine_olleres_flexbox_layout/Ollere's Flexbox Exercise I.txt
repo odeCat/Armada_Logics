@@ -1,0 +1,5 @@
+Ollere's Flexbox Exercise I
+
+The flexbox exercise took me over an hour to make. I had to refine and adjust the code according to the image reference.
+
+I had experimented with the flexbox gap in the main container, I also used the margin-bottom quite a lot. One thing for this specific exercise is that flexbox works best if I consider how the items expand or shrink.
