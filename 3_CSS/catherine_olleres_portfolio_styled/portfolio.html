@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to Catherine's Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Catherine's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am Catherine A. Olleres a Senior taking Bachelor of Science in Computer Science, I'm passionate about web development and design. I love creating interactive and user-friendly web applications. I also love learning new things about computer science. I study Artificial Intelligence or Machine Learning to improve my development skills. I also study databases like AWS or Google Cloud. </p>
+            <img src="portfolio.jpg" alt="A placeholder image for My Portfolio">
+        </section>
+        
+        <section id="projects">
+            <h2>Portfolio/Projects</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>My portfolio</td>
+                        <td>A web development portfolio project showcasing my work at that time.</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>A mini lego unity game</td>
+                        <td>A unity game developed by me, it is just a mini school project.</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>EyeCheck Application</td>
+                        <td>A mobile application built using React Native, we also used Random Forest and YOLOv8 for this project.</td>
+                        <td>2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <fieldset>
+                    <legend>How did you hear about this portfolio?</legend>
+                    <input type="radio" id="friend" name="source" value="friend">
+                    <label for="friend">Friend</label>
+                    <input type="radio" id="social" name="source" value="social">
+                    <label for="social">Social Media</label>
+                    <input type="radio" id="search" name="source" value="search">
+                    <label for="search">Search Engine</label>
+                    <input type="radio" id="other" name="source" value="other">
+                    <label for="other">Other</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Skills/Interests</legend>
+                    <input type="checkbox" id="webdev" name="skills" value="webdev">
+                    <label for="webdev">Web Development</label>
+                    <input type="checkbox" id="design" name="skills" value="design">
+                    <label for="design">Design</label>
+                    <input type="checkbox" id="photography" name="skills" value="photography">
+                    <label for="photography">Photography</label>
+                </fieldset>
+                
+                <label for="comments">Comments or Messages:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea><br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; CATHERINE OLLERES 2025</p>
+    </footer>
+</body>
+</html>
+
+
+<!-- If there is anything that make me struggle in this assignment is the consistency of every line -->
