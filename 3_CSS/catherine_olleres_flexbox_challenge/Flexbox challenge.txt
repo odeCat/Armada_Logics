@@ -1,0 +1,3 @@
+Flexbox challenge
+
+This assignment took me about 3 and a half hours. I had a hard time making my code clean. I wanted to enclose the divs in the right-panel class as one section. But I can't so the html code is as is. And in the styles.css I added a few.
