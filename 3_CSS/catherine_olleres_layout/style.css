@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #141629; 
+  color: #fff;             
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #7810f7;
+}
+.navbar-left a {
+  margin-right: 1.5rem;
+  font-weight: 500;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-in-out;
+}
+.navbar-left a:hover {
+  opacity: 1;
+}
+.navbar-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-right input[type="search"] {
+  background-color: #5e23d8; 
+  border: 1px solid #5e23d8;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  color: #fff;
+  outline: none;
+  align-items: center;
+}
+.navbar-right input[type="search"]::placeholder {
+  color: #ddd;
+}
+.container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+.logo {
+  display: inline-block;
+  background-color: #712cf9;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.main-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  opacity: 0.9;
+}
+.code-and-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.code-snippet {
+  background-color: #2b2b2b;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+}
+.docs-button {
+  background-color: #712cf9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.docs-button:hover {
+  background-color: #7810f7;
+}
+.version {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.secondary-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.secondary-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto 1.5rem auto;
+  opacity: 0.9;
+}
+.install-link {
+  font-weight: 600;
+  color: #7f9aca;
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+}
+.install-link span {
+  margin-left: 0.3rem;
+}
