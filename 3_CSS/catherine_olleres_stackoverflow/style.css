@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #242729;
+    line-height: 1.4;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .btn {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: #0a95ff;
+    color: #fff;
+    border: 1px solid #7aa7c7;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: 50px;
+  }
+  .btn:hover {
+    background-color: #b3d3ea;
+  }
+  .login-btn {
+    background-color: #fff;
+    color: #0a95ff;
+    border: 1px solid #0a95ff;
+  }
+  .signup-btn {
+    background-color: #0a95ff;
+    color: #fff;
+    border-color: #0a95ff;
+  }
+  .signup-btn:hover {
+    background-color: #0074cc;
+  }
+  .cta-btn {
+    background-color: #0a95ff;
+    color: #ffffff;
+    border-color: #0a95ff;
+  }
+  .cta-btn:hover {
+    background-color: #0074cc;
+  }
+  .overflow-btn .cta-btn{
+    background-color: #ea710b;
+    border-color: #ea710b;
+    margin-bottom: 50px;
+  }
+  .header {
+    background-color: #fff;
+    border-bottom: 1px solid #e4e6e8;
+  }
+  .container {
+    max-width: 1264px;
+    margin: 0 auto;
+    padding: 0 16px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .logo{
+    height: 30px
+  }
+  .search-box {
+    flex-grow: 1;
+    margin: 0 20px;
+    position: relative;
+  }
+  .search-box input {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid #bbbfc5;
+    border-radius: 4px;
+    font-size: 14px;
+  } 
+  .nav {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+  }
+  .nav a {
+    color: #bbbfc5;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 20px
+  }
+  .auth-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  .page-content {
+    display: flex;
+    max-width: 1264px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  .sidebar {
+    width: 160px;
+    margin-right: 24px;
+  }
+  .sidebar-nav ul li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+  }
+  .sidebar-nav a {
+    display: block;
+    padding: 8px;
+    border-radius: 3px;
+    color: #242729;
+    font-size: 14px;
+  }
+  .sidebar-nav li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .sidebar-nav a:hover,
+  .sidebar-nav a.current {
+    background-color: #f1f2f3;
+  }
+  
+  .main {
+    flex: 1;
+  }
+  
+  .hero {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+    align-items: center;
+    background-color: #f8fbfa;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+
+  .hero-content {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-left: 50px;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .hero h1 span.highlight{
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    text-align: justify;
+    margin-left: 50px;
+  }
+  
+  .highlight {
+    background: url(Stack_Overflow/background-image.png);
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-display: white;
+  }
+
+  .hero-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .hero-illustration{
+    flex: 1 1 auto;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .hero .visit {
+    color: #0a95ff;
+  }
+
+  .services-intro {
+    margin-bottom: 16px;
+  }
+  
+  .services-intro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+  
+  .services {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 32px;
+    border-radius: 5px;
+  }
+
+  .services-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+  }
+
+  .services-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .service-card {
+    background-color: #ffffff;
+    border: 1px solid #e4e6e8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .service-card-overflow{
+    background-color: #3b4045;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+
+  .service-card-overflow p{
+    margin-left: 50px;
+  }
+
+  .service-card-overflow h3{
+    margin-left: 50px;
+  }
+
+  .service-card-overflow img {
+    width: 20%;
+    height: auto;
+    display: block;
+  }
+
+  .service-card-overflow .home-overflowai{
+    width: 50%;
+    margin-left: auto
+  }
+  
+  .service-card img {
+    width: 20%;
+    height: auto;
+    display: block;
+  }
+
+  .service-card .home-teams{
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .service-card .try{
+    color: #0a95ff;
+    text-decoration: underline;
+    padding: 8px 12px;
+  }
+
+  .service-card .employer{
+    color: #0a95ff;
+    text-decoration: underline;
+    padding: 8px 12px;
+  }
+
+  .service-details {
+    padding: 16px;
+  }
+  
+  .service-details h3 {
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+    color: #242729;
+    
+  }
+  
+  .service-details p {
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    color: #3b4045;
+  }
+
+  .service-details img {
+    width: 200%;
+    height: auto;
+    display: block;
+  }
+  
+  .illustrations {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 16px;
+  }
+  
+  .illustrations img {
+    max-width: 280px;
+    height: auto;
+    display: block;
+  }
+  
+  .overflow-ai {
+    background-color: #f1f2f3;
+  }
+  
+  .work-here {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #e4e6e8;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 32px;
+
+  }
+  
+  .work-here-text {
+    flex: 1 1 400px;
+  }
+  
+  .work-here-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  
+  .work-here-text p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+  
+  .work-here-illustration {
+    flex: 1 1 300px;
+    text-align: right;
+  }
+  
+  .work-here-illustration img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .site-footer {
+    background-color: #232629;
+    color: #9fa6ad;
+    padding: 16px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1264px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+  }
