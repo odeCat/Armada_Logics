@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+.logo {
+  top: 20px;
+  left: 20px;
+}
+.logo img {
+  height: 50px;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-hero {
+  background: url('netflix_image_asset/background.jpg') center/cover no-repeat;
+  position: relative;
+  padding-top: 1rem;  
+  padding-bottom: 6rem;
+  
+}
+.header-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 0;
+}
+.header-hero > * {
+  position: relative;
+  z-index: 1;
+}
+.hero-content {
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content .subheading {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.hero-content .cta-text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.cta-form {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 0.5rem;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.cta-form input[type="email"] {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  outline: none;
+  background: #333;
+}
+.cta-form input[type="email"]::placeholder {
+  color: #8c8c8c;
+}
+.cta-form .cta-btn {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.3s;
+}
+.cta-form .cta-btn:hover {
+  background-color: #f6121d;
+}
+.language-dropdown select {
+  background: #333;
+  color: #fff;
+  border: 1px solid #999;
+  padding: 0.25rem;
+}
+.sign-in-btn {
+  background: #f6121d;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.sign-in-btn:hover {
+  background: #fff;
+  color: #000;
+}
+.email-input {
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+justify-content: center;
+}
+.email-input input[type="email"] {
+  flex: 1;
+  min-width: 220px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+.email-input input::placeholder {
+  color: #8c8c8c;
+}
+.trending {
+  padding: 2rem 0;
+}
+.trending h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.movie-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  white-space: wrap;
+}
+.movie-card {
+  position: relative;
+  min-width: 220px;
+  border-radius: 8px;
+}
+.movie-card img {
+  width: 18%;
+  min-width: 200px;
+  flex-grow: 1;
+}
+.reasons {
+  background-color: #000;
+  padding: 3rem 0;
+  text-align: center;
+}
+.reasons h2 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.reason-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 0 2rem; 
+}
+.reason-item {
+  background-color: #1a2246;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.reason-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.reason-item p {
+  color: #c0c0c0;
+  font-size: 0.9rem;
+}
+.final-cta {
+  text-align: center;
+  padding: 2rem 0;
+}
+.final-cta p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1rem;
+  }
+  .hero-content .subheading {
+    font-size: 1rem;
+  }
+  .cta-form input[type="email"] {
+    min-width: 120px;
+    padding: 0.5rem;
+    font-size: 0.5rem;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-right {
+    flex-direction: column;
+  }
+  .movie-cards {
+    justify-content: center;
+  }
+  .movie-cards img {
+    width: 18%;
+  }
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content .subheading {
+    font-size: 1.1rem;
+  }
+  .movie-cards {
+    justify-content: center;
+  }
+  .movie-cards img {
+    width: 18%;
+  }
+  .cta-form input[type="email"] {
+    min-width: 150px;
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content .subheading {
+    font-size: 1.25rem;
+  }
+}
